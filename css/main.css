@@ -1,60 +1,79 @@
 html {
-  font-family: "Merriweather", serif;
-  box-sizing: html {
-  	box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  *, *::before, *::after {
-  	box-sizing: inherit;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  color: white;
+  margin: 0;
+}
+
+.imgleft {
+  float: left;
+  width: 3em;
+}
+
+.imgright {
+  float: right;
+  width: 3em;
 }
 
 h1 {
   font-size: 2rem;
-  color: #fff;
   text-align: center;
-  float: none;
-  background-color: #d05c2e;
-  padding: 0.5em;
   margin: 0;
+  padding: 0.1em;
 }
 
-nav {
-  font-size: 1.125rem;
-  text-align: center;
-  color: #fff;
+header {
+  overflow: hidden;
+  background-color: #d05c2e;
 }
 
-nav ul {
-  list-style-type: none;
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
   background-color: #d05c2e;
-  text-align:center;
-  border: 2px solid #fff;
+  overflow: hidden;
+  width: 100%;
 }
 
-.grainleft {
-  float: left;
-  width: 40px;
-  margin-top: 1em;
-}
-
-.grainright {
-  float: right;
-  width: 40px;
-  margin-top: 1em;
-}
-
-li {
-  list-style-type: none;
-  float:left;
-  font-weight: bold;
-  width: 25%;
-  background-color: #d05c2e;
-  color: #fff;
+ul a {
+  display: block;
+  text-decoration: none;
+  padding: 0.4em;
+  margin: 0;
+  color: white;
   border: 1px solid #a63f38;
-  width: 33.333%;
-  padding: 1em;
+}
+
+ul a:hover {
+  background-color: #a63f38;
+}
+
+ul li {
+  text-align: center;
+  list-style-type: none;
+  float: left;
+  width: 33.3333%;
 }
